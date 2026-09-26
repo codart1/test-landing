@@ -11,16 +11,20 @@
 </head>
 <body>
 
+<div data-sc-progress></div>
+<div class="sc-grain" aria-hidden="true"></div>
+
 <nav class="site-nav">
   <span class="site-nav__mark">ORBIT</span>
-  <a class="site-nav__cta" href="#close">Get started</a>
+  <a class="site-nav__cta" href="#close" data-sc-magnet="0.25">Get started</a>
 </nav>
 
 <!-- ================================================================ HERO -->
 <header class="hero sc-wrap" data-sc-in data-sc-stagger="80">
+  <div class="hero__aurora" aria-hidden="true"><span></span><span></span><span></span></div>
   <p class="sc-label hero__eyebrow" data-sc-in>Demo landing page · built with scroll-craft</p>
   <h1 class="sc-display sc-display--xl hero__title" data-sc-in data-sc-kinetic="lines">
-    The workspace that moves at the speed of your team.
+    The workspace that moves at the speed of <span class="accent">your team</span>.
   </h1>
   <div class="hero__row" data-sc-in>
     <p class="sc-lede">Orbit turns scattered specs, threads and tasks into one line of sight — from first sketch to shipped release.</p>
@@ -48,12 +52,13 @@
 <!-- ================================================================ PEAK -->
 <section class="peak" data-sc-act="pin" data-sc-span="3" data-sc-peak data-sc-drift="#07080a">
   <div class="sc-stage">
+    <div class="peak__glow" aria-hidden="true"></div>
     <canvas class="peak__canvas"></canvas>
     <div class="sc-scrim sc-scrim--bottom"></div>
     <div class="peak__copy">
       <p class="sc-label" data-sc-cue="0.05 0.3">02 · The signature move</p>
       <h2 class="sc-display sc-display--xl peak__title" data-sc-cue="0.1 0.35" data-sc-kinetic="lines" style="margin-top:1rem;">
-        Every scattered thread finds its line.
+        Every scattered thread finds <span class="accent">its line</span>.
       </h2>
       <div class="peak__meta" data-sc-cue="0.55 0.9">
         <div><strong data-sc-count="0 1240" data-sc-count-at="0.55 0.75">0</strong>teams aligned per scroll</div>
@@ -64,9 +69,54 @@
   </div>
 </section>
 
+<!-- ============================================================ SHOWCASE -->
+<section class="showcase" data-sc-act="pan" data-sc-span="2.2" data-sc-drift="#0c0f14">
+  <div class="sc-stage">
+    <div class="showcase__head sc-wrap">
+      <p class="sc-label" data-sc-cue="0.02 0.2">03 · Inside the surface</p>
+      <h2 class="sc-display sc-display--lg showcase__title" data-sc-cue="0.05 0.25" data-sc-kinetic="lines">
+        Four surfaces. One continuous thread.
+      </h2>
+    </div>
+    <div class="showcase__rail" data-sc-pan="0.55">
+      <article class="panel">
+        <div class="panel__chrome"><span></span><span></span><span></span></div>
+        <p class="panel__label">Brief</p>
+        <div class="panel__lines"><i></i><i></i><i style="width:58%"></i></div>
+      </article>
+      <article class="panel">
+        <div class="panel__chrome"><span></span><span></span><span></span></div>
+        <p class="panel__label">Timeline</p>
+        <div class="panel__bars">
+          <i style="height:38%"></i><i style="height:64%"></i><i style="height:48%"></i>
+          <i style="height:82%"></i><i style="height:56%"></i><i style="height:70%"></i>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel__chrome"><span></span><span></span><span></span></div>
+        <p class="panel__label">Board</p>
+        <div class="panel__board">
+          <div class="panel__col"><i></i><i></i></div>
+          <div class="panel__col"><i></i><i></i><i></i></div>
+          <div class="panel__col"><i></i></div>
+        </div>
+      </article>
+      <article class="panel">
+        <div class="panel__chrome"><span></span><span></span><span></span></div>
+        <p class="panel__label">Review</p>
+        <div class="panel__chat">
+          <div class="panel__bubble"></div>
+          <div class="panel__bubble panel__bubble--right"></div>
+          <div class="panel__bubble"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- =============================================================== STATS -->
 <section class="sc-section sc-wrap">
-  <p class="sc-label" data-sc-in>03 · Why it holds up</p>
+  <p class="sc-label" data-sc-in>05 · Why it holds up</p>
   <div class="stats__grid" style="margin-top:2.5rem;" data-sc-in data-sc-stagger="100">
     <div>
       <div class="stat__num">4.8/5</div>
@@ -119,13 +169,13 @@
 
 <!-- =============================================================== CLOSE -->
 <section id="close" class="sc-section sc-wrap close" data-sc-act data-sc-drift="#101319">
-  <p class="sc-label" data-sc-cue="0.05 0.6">05 · Start here</p>
+  <p class="sc-label" data-sc-cue="0.05 0.6">06 · Start here</p>
   <h2 class="sc-display sc-display--xl close__title" data-sc-cue="0.1 0.7" data-sc-kinetic="lines" style="margin-top:1rem;">
     Bring your next release into one line of sight.
   </h2>
   <div class="close__row" data-sc-cue="0.3 0.9">
-    <a class="btn" href="#">Start free trial</a>
-    <a class="btn btn--ghost" href="#">Book a walkthrough</a>
+    <a class="btn" href="#" data-sc-magnet="0.3">Start free trial</a>
+    <a class="btn btn--ghost" href="#" data-sc-magnet="0.3">Book a walkthrough</a>
   </div>
 </section>
 
